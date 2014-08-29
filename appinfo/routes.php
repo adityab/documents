@@ -13,6 +13,9 @@
  * Document routes
  */
 
+$this->create('documents_index', '/')
+	->actionInclude('documents/index.php');
+
 $this->create('documents_documents_create', 'ajax/documents/create')
 	->post()
 	->action('\OCA\Documents\DocumentController', 'create')
